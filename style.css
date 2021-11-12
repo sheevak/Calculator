@@ -8,3 +8,106 @@ header {
     background-color: aquamarine;
     padding: 20px 0 20px 40px;
 }
+
+#container {
+    display: grid;
+    grid-template-columns: 40px 40px 40px 40px 40px;
+    grid-template-rows: 40px 40px 40px 40px 40px;
+    border: 1px solid red;
+    gap: 10px;
+    grid-template-areas: 
+        "output output output output"
+        "seven eight nine divide"
+        "four five six multiply"
+        "one two three minus"
+        "zero point equals plus"
+    ;
+    justify-content: center;
+
+
+}
+
+#output {
+    grid-area: output;
+    background-color: blueviolet;
+}
+
+#one {
+    grid-area: one;
+    background-color: blueviolet;
+}
+
+#two {
+    grid-area: two;
+    background-color: blueviolet;
+}
+
+#three {
+    grid-area: three;
+    background-color: blueviolet;
+}
+
+#four {
+    grid-area: four;
+    background-color: blueviolet;
+}
+
+#five {
+    grid-area: five;
+    background-color: blueviolet;
+}
+
+#six {
+    grid-area: six;
+    background-color: blueviolet;
+}
+
+#seven {
+    grid-area: seven;
+    background-color: blueviolet;
+}
+
+#eight {
+    grid-area: eight;
+    background-color: blueviolet;
+}
+
+#nine {
+    grid-area: nine;
+    background-color: blueviolet;
+}
+
+#zero {
+    grid-area: zero;
+    background-color: blueviolet;
+}
+
+#plus {
+    grid-area: plus;
+    background-color: blueviolet;
+}
+
+#minus {
+    grid-area: minus;
+    background-color: blueviolet;
+}
+
+#divide {
+    grid-area: divide;
+    background-color: blueviolet;
+}
+
+#multiply {
+    grid-area: multiply;
+    background-color: blueviolet;
+}
+
+#equals {
+    grid-area: equals;
+    background-color: blueviolet;
+}
+
+#point {
+    grid-area: point;
+    background-color: blueviolet;
+}
