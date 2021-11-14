@@ -9,27 +9,41 @@ header {
     padding: 20px 0 20px 40px;
 }
 
-#container {
+main {
     display: grid;
-    grid-template-columns: 40px 40px 40px 40px 40px;
-    grid-template-rows: 40px 40px 40px 40px 40px;
+    place-items: center;   
+}
+
+div, button {
+    font-size: larger;
+}
+
+#container {
+    width: 70%;
+    aspect-ratio: 1;
+    max-width: 500px;
+    margin-top: 5%;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     border: 1px solid red;
-    gap: 10px;
+    gap: 2%;
     grid-template-areas: 
         "output output output output"
+        "leftBracket rightBracket percent clear"
         "seven eight nine divide"
         "four five six multiply"
         "one two three minus"
         "zero point equals plus"
     ;
-    justify-content: center;
-
-
 }
 
 #output {
     grid-area: output;
-    background-color: blueviolet;
+    background-color: rgb(255, 255, 255);
+    text-align: end;
 }
 
 #one {
@@ -109,5 +123,25 @@ header {
 
 #point {
     grid-area: point;
+    background-color: blueviolet;
+}
+
+#leftBracket {
+    grid-area: leftBracket;
+    background-color: blueviolet;
+}
+
+#rightBracket {
+    grid-area: rightBracket;
+    background-color: blueviolet;
+}
+
+#percent {
+    grid-area: percent;
+    background-color: blueviolet;
+}
+
+#clear {
+    grid-area: clear;
     background-color: blueviolet;
 }

@@ -17,23 +17,29 @@
         <div id="container">
             <div id="output"></div>
 
-            <button id="one">1</button>
-            <button id="two">2</button>
-            <button id="three">3</button>
-            <button id="four">4</button>
-            <button id="five">5</button>
-            <button id="six">6</button>
-            <button id="seven">7</button>
-            <button id="eight">8</button>
-            <button id="nine">9</button>
-            <button id="zero">0</button>
+            <button onclick='button(value)' value="1" id="one">1</button>
+            <button onclick='button(value)' value="2" id="two">2</button>
+            <button onclick='button(value)' value="3" id="three">3</button>
+            <button onclick='button(value)' value="4" id="four">4</button>
+            <button onclick='button(value)' value="5" id="five">5</button>
+            <button onclick='button(value)' value="6" id="six">6</button>
+            <button onclick='button(value)' value="7" id="seven">7</button>
+            <button onclick='button(value)' value="8" id="eight">8</button>
+            <button onclick='button(value)' value="9" id="nine">9</button>
+            <button onclick='button(value)' value="0" id="zero">0</button>
 
-            <button id="plus">+</button>
-            <button id="minus">-</button>
-            <button id="divide">/</button>
-            <button id="multiply">x</button>
-            <button id="equals">=</button>
-            <button id="point">.</button>
+            <button onclick='button(value)' value="+"  id="plus">+</button>
+            <button onclick='button(value)' value="-" id="minus">-</button>
+            <button onclick='button(value)' value="÷" id="divide">÷</button>
+            <button onclick='button(value)' value="×" id="multiply">×</button>
+            <button onclick='button(value)' value="." id="point">.</button>
+
+            <button onclick='equals()' value="=" id="equals">=</button>
+
+            <button id="leftBracket">(</button>
+            <button id="rightBracket">)</button>
+            <button id="percent">%</button>
+            <button onclick="clearCalc()" id="clear">AC</button>
         </div>
 
 
